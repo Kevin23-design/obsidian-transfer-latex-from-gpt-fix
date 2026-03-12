@@ -1,24 +1,24 @@
-[**简体中文**](./README.md) | [**English**](./README_en.md) | [**繁体中文**](./README_zh-tw.md) | [**日本語**](./README_ja.md) | [**한국어**](./README_ko.md)
+[**English**](./README.md) | [**简体中文**](./docs/README_zh.md) | [**繁体中文**](./docs/README_zh-tw.md) | [**日本語**](./docs/README_ja.md) | [**한국어**](./docs/README_ko.md)
 
 ---
 
-## 1. 介绍
-本项目是对[该项目](https://github.com/xixia123/obsidian-transfer-latex-from-gpt)修复，修复了其无法工作的bug。由于原作者长时间没有维护，所以先发布该插件，如果原作者恢复维护，我会停止维护。
-本项目的目标是将ChatGPT回答中的LaTeX公式转换为Obsidian能够识别且正确渲染的Markdown格式。此工具帮助用户在Obsidian笔记中便捷地使用数学公式，提高学习效率与科研质量。
+## 1. Introduction
+This project is a fix for [this project](https://github.com/xixia123/obsidian-transfer-latex-from-gpt), patching the bugs that prevented it from working. Since the original author has not maintained it for a long time, I am releasing this plugin first. If the original author resumes maintenance, I will stop maintaining this one.
+The goal of this project is to convert LaTeX formulas from ChatGPT's responses into Markdown formats that Obsidian can recognize and render correctly. This tool helps users easily use mathematical formulas in Obsidian notes, improving learning efficiency and research quality.
 
-## 2. 安装
-1. 通过应用市场直接安装`Transfer Latex from GPT`插件。
-2. 或者从[GitHub仓库](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix)下载插件包并手动安装。
+## 2. Installation
+1. Install the `Transfer Latex from GPT` plugin directly through the Community Plugins market.
+2. Or download the plugin package from the [GitHub repository](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt) and install it manually.
 
-## 3. 使用说明
-**注意**：使用前，请确保在Obsidian编辑器设置中关闭“自动转换HTML”选项。否则，粘贴ChatGPT的答案时，应使用纯文本格式。
+## 3. Usage Instructions
+**Note**: Before using, please ensure the "Auto Convert HTML" option is turned off in Obsidian editor settings. Otherwise, when pasting ChatGPT's answers, use plain text format.
 
-![Obsidian设置](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/PixPin_2024-11-26_14-18-33.png)  
-![关闭HTML转换](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/PixPin_2024-11-26_14-20-01.png)
+![Obsidian Settings](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt/blob/master/media/PixPin_2024-11-26_14-18-33.png)  
+![Disable HTML Conversion](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt/blob/master/media/PixPin_2024-11-26_14-20-01.png)
 
-### 使用方式
-1. **通过命令使用**  
-   ![命令使用示例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/Command%20line.gif)
+### How to Use
+1. **Via Command**  
+   ![Command Usage Example](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt/blob/master/media/Command%20line.gif)
 
-2. **通过点击左侧按钮使用**  
-   ![按钮使用示例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/Click%20button.gif)
+2. **Via Left Ribbon Button**  
+   ![Button Usage Example](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt/blob/master/media/Click%20button.gif)
