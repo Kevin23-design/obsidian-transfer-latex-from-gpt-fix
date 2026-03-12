@@ -13,12 +13,12 @@
 ## 3. 使用說明
 **注意**：使用前，請確保在Obsidian編輯器設定中關閉「自動轉換HTML」選項。否則，貼上ChatGPT的答案時，應使用純文字格式。
 
-![Obsidian設定](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/raw/master/media/PixPin_2024-11-26_14-18-33.png)  
-![關閉HTML轉換](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/raw/master/media/PixPin_2024-11-26_14-20-01.png)
+![Obsidian設定](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/PixPin_2024-11-26_14-18-33.png)  
+![關閉HTML轉換](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/PixPin_2024-11-26_14-20-01.png)
 
 ### 使用方式
 1. **透過命令使用**  
-   ![命令使用範例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/raw/master/media/Command%20line.gif)
+   ![命令使用範例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/Command%20line.gif)
 
 2. **透過點擊左側按鈕使用**  
-   ![按鈕使用範例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/raw/master/media/Click%20button.gif)
+   ![按鈕使用範例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/Click%20button.gif)
