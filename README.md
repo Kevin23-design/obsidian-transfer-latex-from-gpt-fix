@@ -1,5 +1,5 @@
 ## 1. 介绍
-本项目是对[GitHub仓库](https://github.com/xixia123/obsidian-transfer-latex-from-gpt)修复，修复了其无法工作的bug。由于原作者长时间没有维护，所以先发布该插件，如果原作者恢复维护，我会停止维护。
+本项目是对[该项目](https://github.com/xixia123/obsidian-transfer-latex-from-gpt)修复，修复了其无法工作的bug。由于原作者长时间没有维护，所以先发布该插件，如果原作者恢复维护，我会停止维护。
 本项目的目标是将ChatGPT回答中的LaTeX公式转换为Obsidian能够识别且正确渲染的Markdown格式。此工具帮助用户在Obsidian笔记中便捷地使用数学公式，提高学习效率与科研质量。
 
 ## 2. 安装
