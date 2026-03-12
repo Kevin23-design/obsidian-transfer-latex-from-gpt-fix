@@ -13,12 +13,12 @@ The goal of this project is to convert LaTeX formulas from ChatGPT's responses i
 ## 3. Usage Instructions
 **Note**: Before using, please ensure the "Auto Convert HTML" option is turned off in Obsidian editor settings. Otherwise, when pasting ChatGPT's answers, use plain text format.
 
-![Obsidian Settings](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/PixPin_2024-11-26_14-18-33.png)  
-![Disable HTML Conversion](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/PixPin_2024-11-26_14-20-01.png)
+![Obsidian Settings](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/main/media/PixPin_2024-11-26_14-18-33.png)  
+![Disable HTML Conversion](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/main/media/PixPin_2024-11-26_14-20-01.png)
 
 ### How to Use
 1. **Via Command**  
-   ![Command Usage Example](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/Command%20line.gif)
+   ![Command Usage Example](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/main/media/Command%20line.gif)
 
 2. **Via Left Ribbon Button**  
-   ![Button Usage Example](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/Click%20button.gif)
+   ![Button Usage Example](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/main/media/Click%20button.gif)

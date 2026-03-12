@@ -13,12 +13,12 @@
 ## 3. 使用方法
 **注意**: 使用する前に、Obsidianのエディタ設定で「HTMLの自動変換」オプションをオフにしていることを確認してください。そうでない場合は、ChatGPTの回答を貼り付ける際にプレーンテキスト形式を使用する必要があります。
 
-![Obsidian設定](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/PixPin_2024-11-26_14-18-33.png)  
-![HTML変換を無効にする](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/PixPin_2024-11-26_14-20-01.png)
+![Obsidian設定](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/main/media/PixPin_2024-11-26_14-18-33.png)  
+![HTML変換を無効にする](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/main/media/PixPin_2024-11-26_14-20-01.png)
 
 ### 使い方
 1. **コマンドによる使用**  
-   ![コマンド使用例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/Command%20line.gif)
+   ![コマンド使用例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/main/media/Command%20line.gif)
 
 2. **左側のボタンをクリックして使用**  
-   ![ボタン使用例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/master/media/Click%20button.gif)
+   ![ボタン使用例](https://github.com/Kevin23-design/obsidian-transfer-latex-from-gpt-fix/blob/main/media/Click%20button.gif)
