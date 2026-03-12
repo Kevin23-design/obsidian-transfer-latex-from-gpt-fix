@@ -1,4 +1,4 @@
-import { App, Plugin, PluginSettingTab, Setting } from 'obsidian';
+import { Notice, Plugin } from 'obsidian';
 
 // 简单判断括号里的内容看起来像不像数学
 function looksLikeMath(s: string): boolean {
@@ -18,36 +18,22 @@ function looksLikeMath(s: string): boolean {
 }
 
 export default class TransferLatexFromGPTPlugin extends Plugin {
-    async onload() {
-        console.log('Loading Transfer LaTeX from GPT Plugin');
-
-        // 添加命令：读取并替换当前文档中的 LaTeX 公式为 MathJax 语法
+    onload() {
         this.addCommand({
             id: 'convert-latex-to-mathjax',
             name: 'Convert LaTeX to MathJax',
             icon: 'sigma',
             callback: () => {
-                this.convertLatexToMathJax();
+                void this.convertLatexToMathJax();
             }
         });
 
-        // 在菜单栏添加图标，点击时触发相同的转换功能
-        const ribbonIconEl = this.addRibbonIcon('sigma', 'Convert LaTeX to MathJax', () => this.convertLatexToMathJax());
-        if (ribbonIconEl) {
-            console.log("Ribbon icon added successfully.");
-            const ribbonContainer = document.querySelector(".workspace-ribbon");
-            if (ribbonContainer) {
-                ribbonContainer.appendChild(ribbonIconEl);
-                console.log("Ribbon icon moved to the end.");
-            }
-        } else {
-            console.log("Failed to add ribbon icon.");
-        }
+        this.addRibbonIcon('sigma', 'Convert LaTeX to MathJax', () => {
+            void this.convertLatexToMathJax();
+        });
     }
 
-    // 卸载插件时的清理
     onunload() {
-        console.log('Unloading Transfer LaTeX from GPT Plugin');
     }
 
     // 读取当前打开的文档内容并进行 LaTeX 到 MathJax 的替换
@@ -55,7 +41,7 @@ export default class TransferLatexFromGPTPlugin extends Plugin {
         const activeFile = this.app.workspace.getActiveFile();
 
         if (!activeFile) {
-            console.log("No active file");
+            new Notice('No active file found.');
             return;
         }
 
@@ -68,9 +54,9 @@ export default class TransferLatexFromGPTPlugin extends Plugin {
         // 只有当内容真正发生变化时才写入，避免无意义的修改
         if (convertedContent !== fileContent) {
             await this.app.vault.modify(activeFile, convertedContent);
-            console.log("LaTeX to MathJax conversion completed.");
+            new Notice('LaTeX to MathJax conversion completed.');
         } else {
-            console.log("No changes needed.");
+            new Notice('No changes needed.');
         }
     }
 
