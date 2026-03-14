@@ -21,14 +21,14 @@ export default class TransferLatexFromGPTPlugin extends Plugin {
     onload() {
         this.addCommand({
             id: 'convert-latex-to-mathjax',
-            name: 'Convert formulas from GPT',
+            name: 'Convert formulas from chatgpt',
             icon: 'sigma',
             callback: () => {
                 void this.convertLatexToMathJax();
             }
         });
 
-        this.addRibbonIcon('sigma', 'Convert formulas from GPT', () => {
+        this.addRibbonIcon('sigma', 'Convert formulas from chatgpt', () => {
             void this.convertLatexToMathJax();
         });
     }
