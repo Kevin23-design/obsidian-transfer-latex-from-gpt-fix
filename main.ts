@@ -21,14 +21,14 @@ export default class TransferLatexFromGPTPlugin extends Plugin {
     onload() {
         this.addCommand({
             id: 'convert-latex-to-mathjax',
-            name: 'Convert LaTeX to MathJax',
+            name: 'Convert formulas from GPT',
             icon: 'sigma',
             callback: () => {
                 void this.convertLatexToMathJax();
             }
         });
 
-        this.addRibbonIcon('sigma', 'Convert LaTeX to MathJax', () => {
+        this.addRibbonIcon('sigma', 'Convert formulas from GPT', () => {
             void this.convertLatexToMathJax();
         });
     }
@@ -54,7 +54,7 @@ export default class TransferLatexFromGPTPlugin extends Plugin {
         // 只有当内容真正发生变化时才写入，避免无意义的修改
         if (convertedContent !== fileContent) {
             await this.app.vault.modify(activeFile, convertedContent);
-            new Notice('LaTeX to MathJax conversion completed.');
+            new Notice('Formula conversion completed.');
         } else {
             new Notice('No changes needed.');
         }
