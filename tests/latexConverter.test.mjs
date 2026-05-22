@@ -89,3 +89,52 @@ test('keeps existing MathJax unchanged', () => {
 	const input = '$x^2 + 1$\n\n$$x^2 + 1$$';
 	assert.equal(convertLatexSyntax(input), input);
 });
+
+test('keeps fenced code blocks unchanged', () => {
+	const input = 'Before\n```ts\nconst x = [a+b];\nconst y = (1/2);\n```\nAfter';
+	assert.equal(convertLatexSyntax(input), input);
+});
+
+test('keeps inline code spans unchanged', () => {
+	const input = 'Use `msg[layer_idx]`.';
+	assert.equal(convertLatexSyntax(input), input);
+});
+
+test('converts quoted escaped block formulas', () => {
+	const input = '> \\[\n> x^2 + 1\n> \\]';
+	assert.equal(convertLatexSyntax(input), '> $$ x^2 + 1 $$');
+});
+
+test('converts multiline bracket blocks that look mathy', () => {
+	const input = '[\nx^2 + 1\n]';
+	assert.equal(convertLatexSyntax(input), '$$\nx^2 + 1\n$$');
+});
+
+test('strips ChatGPT heading artifact before bracket block', () => {
+	const input = '# [\nx^2 + 1\n]';
+	assert.equal(convertLatexSyntax(input), '$$\nx^2 + 1\n$$');
+});
+
+test('strips ChatGPT heading artifact before begin command', () => {
+	const input = '# \\begin{pmatrix}\n1 & 2\n\\end{pmatrix}';
+	assert.equal(convertLatexSyntax(input), '\\begin{pmatrix}\n1 & 2\n\\end{pmatrix}');
+});
+
+test('converts single-line bracket formulas with LaTeX matrix delimiters', () => {
+	const input = '[ \\left[ 1 & 2 \\\\ 3 & 4 \\right] ]';
+	assert.equal(convertLatexSyntax(input), '$$\n\\left[ 1 & 2 \\\\ 3 & 4 \\right]\n$$');
+});
+
+test('converts plain parenthetical single variables and uppercase notation', () => {
+	assert.equal(convertLatexSyntax('(p) and (DEM)'), '$p$ and $DEM$');
+});
+
+test('does not convert prose parentheticals', () => {
+	const input = '(this is prose)';
+	assert.equal(convertLatexSyntax(input), input);
+});
+
+test('fixes ChatGPT artifacts inside generated display math blocks', () => {
+	const input = '\\[\n1 \\\n====\n## x\n+,y\n\\]';
+	assert.equal(convertLatexSyntax(input), '$$\n1 \\\\\n=\nx\n-\n+y\n$$');
+});
